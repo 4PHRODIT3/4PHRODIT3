@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Htet Myat Linn: Junior Frontend Developer</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/pagepiling.js/dist/jquery.pagepiling.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/htetmyatlinn.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="main-container min-vh-100">
+      <div class="row m-0 p-0">
+        <div class="sidebar" id="sidebar">
+          <div class="w-100">
+            <button class="close-btn button" id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="profile-img-container">
+              <img src="./assets/img/htetmyatlinn.png" alt="" />
+            </div>
+            <div class="tabs">
+              <div class="my-info">
+                <p class="mb-0">Htet Myat Linn</p>
+                <small>Junior Frontend Developer</small>
+              </div>
+              <div class="nav-tabs">
+                <ul>
+                  <li><i class="fas fa-user-circle"></i>Introduction</li>
+                  <li><i class="fas fa-info-circle"></i>About Me</li>
+                  <li><i class="fas fa-project-diagram"></i>Portfolio</li>
+                  <li><i class="fas fa-laptop-code"></i>Services</li>
+                  <li><i class="fas fa-address-book"></i>Contact Me</li>
+                </ul>
+              </div>
+              <div class="social-tabs">
+                <a class="button">
+                  <i
+                    class="fab fa-facebook-f"
+                    style="color: #3b5999 !important"
+                  ></i>
+                </a>
+                <a class="button">
+                  <i
+                    class="fab fa-github"
+                    style="color: #3b5999 !important"
+                  ></i>
+                </a>
+                <a class="button">
+                  <i
+                    class="fab fa-linkedin"
+                    style="color: #0277b5 !important"
+                  ></i>
+                </a>
+              </div>
+              <small class="copyright">&copy; 2021 All Rights Reserved </small>
+            </div>
+          </div>
+        </div>
+        <div class="menu-bar">
+          <div class="brandname">Htet Myat Linn</div>
+          <div id="open-sidebar"><i class="fas fa-bars"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/pagepiling.js/dist/jquery.pagepiling.min.js"></script>
+    <script src="./assets/js/slidebar.js"></script>
+  </body>
+</html>

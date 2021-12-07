@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+  --background-color: rgb(237 241 244);
+  --neumorphic-outer-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.336),
+    -4px -4px 7px 0 rgba(255, 255, 255, 0.664);
+  --neumorphic-outer-shadow-hover: 4px 4px 5px 0 rgba(0, 0, 0, 0.336),
+    -2px -2px 4px 0 rgba(255, 255, 255, 0.664);
+  --neumorphic-inner-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.336) inset,
+    -4px -4px 7px 0 rgba(255, 255, 255, 0.664) inset;
+  --neumorphic-button-shadow-hover: 2px 2px 4px 0 rgba(0, 0, 0, 0.192),
+    -1px -1px 3px 0 rgba(255, 255, 255, 0.904);
+  --neumorphic-button-shadow-active: 2px 2px 4px 0 rgba(0, 0, 0, 0.192) inset,
+    -1px -1px 3px 0 rgba(255, 255, 255, 0.904) inset;
+  --neumorphic-button-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.192),
+    -3px -3px 5px 0 rgba(255, 255, 255, 0.904);
+  --soft-dark: rgba(53, 53, 53, 0.733);
+  --normal-font: #44476a;
+}
+
+body {
+  background: var(--background-color);
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  z-index: 5;
+  width: 25%;
+  min-height: 100vh;
+  background: rgb(237 241 244);
+  box-shadow: 5px 0px 8px 0px rgba(0, 0, 0, 0.212);
+  padding: 25px 0px;
+  border-right: 0.0825rem solid #d1d9e6d0;
+}
+
+.main-container {
+  background: rgb(237 241 244);
+}
+
+.profile-img-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: var(--neumorphic-outer-shadow);
+  transition: 0.4s;
+  border: 0.0625rem solid #d1d9e6d7;
+}
+.profile-img-container:hover {
+  transform: scale(0.99);
+  box-shadow: var(--neumorphic-outer-shadow-hover);
+  cursor: grabbing;
+}
+
+.profile-img-container img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: -10px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  color: var(--normal-font);
+}
+
+.my-info {
+  margin: 18px auto;
+}
+
+.my-info p {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.my-info small {
+  letter-spacing: 0.04rem;
+  font-size: 13px;
+}
+
+.tabs .nav-tabs {
+  width: 80%;
+  max-width: 400px;
+  margin: 0px auto;
+}
+.nav-tabs ul {
+  list-style-type: none;
+}
+.nav-tabs ul li {
+  padding: 8px 28px;
+  box-shadow: var(--neumorphic-button-shadow);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border: 0.0625rem solid #d1d9e6d0;
+  transition: 0.4s;
+  letter-spacing: 0.04rem;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-tabs ul li:not(.active):hover {
+  transform: scale(0.99);
+  box-shadow: var(--neumorphic-button-shadow-hover);
+  cursor: grabbing;
+}
+.nav-tabs ul li:not(.active):active {
+  box-shadow: var(--neumorphic-button-shadow-active);
+}
+
+.nav-tabs ul li i {
+  font-size: 15px;
+  margin: 0;
+  margin-right: 8px;
+}
+.social-tabs {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.social-tabs .button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.button {
+  margin: 14px 0px;
+  border-radius: 15px;
+
+  box-shadow: var(--neumorphic-button-shadow);
+  color: var(--soft-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.0625rem solid #d1d9e6d0;
+}
+.button:hover {
+  box-shadow: var(--neumorphic-button-shadow-hover);
+  transform: scale(0.99);
+  cursor: grabbing;
+}
+.button:active {
+  box-shadow: var(--neumorphic-button-shadow-active);
+}
+
+.copyright {
+  letter-spacing: 0.04rem;
+  font-size: 12px;
+}
+
+.close-btn {
+  display: none;
+}
+
+.nav-slide-off {
+  animation: slide-off;
+  animation-duration: 1s;
+  left: -100%;
+  box-shadow: none;
+}
+
+.menu-bar {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.61);
+  padding: 15px 20px;
+  color: var(--normal-font);
+  box-shadow: var(--neumorphic-outer-shadow);
+  display: none;
+}
+.menu-bar .brandname {
+  letter-spacing: 0.04rem;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.menu-bar #open-slidebar i {
+  font-size: 20px;
+}
+
+.nav-tabs .active {
+  box-shadow: var(--neumorphic-button-shadow-active);
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    padding: 14px 0px;
+    position: absolute;
+  }
+  .profile-img-container {
+    min-width: 240px;
+    min-height: 230px;
+  }
+  .profile-img-container img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+  .my-info p {
+    font-size: 22px;
+  }
+  .my-info small {
+    font-size: 12px;
+  }
+  .nav-tabs ul li {
+    font-size: 14px;
+    padding: 5px 0px;
+  }
+  .nav-tabs ul li i {
+    font-size: 12px;
+  }
+  .social-tabs .button {
+    width: 40px;
+    height: 40px;
+  }
+  .close-btn {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    right: 15px;
+    top: 3px;
+    color: var(--normal-font);
+  }
+  .menu-bar {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-height: 700px) {
+  .sidebar {
+    padding-top: 20%;
+  }
+}
+
+/* Animations */
+
+@keyframes slide-off {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes slide-in {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* iPad Portrait Mode */
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .sidebar {
+    padding: 0;
+  }
+  .profile-img-container {
+    width: 45%;
+    height: 340px;
+  }
+  .my-info p {
+    font-size: 36px;
+  }
+  .my-info small {
+    font-size: 18px;
+  }
+  .nav-tabs {
+    margin: 20px 0px;
+  }
+  .nav-tabs ul li {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .social-tabs .button {
+    width: 55px;
+    height: 55px;
+  }
+  .social-tabs .button i {
+    font-size: 20px;
+  }
+  .copyright {
+    font-size: 18px;
+  }
+  .close-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .close-btn i {
+    font-size: 16px;
+  }
+  .menu-bar {
+    padding: 20px;
+    font-size: 25px;
+  }
+  .menu-bar .brandname {
+    font-size: 25px;
+  }
+}
+
+/* iPad Pro Landscape Mode */
+
+@media screen and (min-width: 1366px) and (min-height: 1024px) {
+  .copyright {
+    margin-top: 15px;
+  }
+  .profile-img-container {
+    width: 280px;
+    height: 280px;
+  }
+  .profile-img-container img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-height: 1366px) and (min-width: 1024px) {
+  .profile-img-container {
+    width: 40%;
+    height: 400px;
+  }
+  .my-info p {
+    font-size: 45px;
+  }
+  .my-info small {
+    font-size: 23px;
+  }
+  .nav-tabs ul li {
+    font-size: 23px;
+  }
+  .social-tabs .button {
+    width: 60px;
+    height: 60px;
+  }
+  .social-tabs .button i {
+    font-size: 23px;
+  }
+  .copyright {
+    margin-top: 20px;
+  }
+}
