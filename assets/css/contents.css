@@ -9,7 +9,9 @@ html {
 }
 #introduction .intro-contents,
 #about-me,
-#services {
+#services,
+#contact-me,
+#portfolio {
   color: var(--normal-font);
   letter-spacing: 0.06rem;
   line-height: 1.6rem;
@@ -48,6 +50,69 @@ html {
   min-height: 182.3px;
 }
 
+.neumorphic-outer-shadow {
+  border-radius: 0.625rem;
+  box-shadow: var(--neumorphic-outer-shadow);
+}
+.neumorphic-inner-shadow {
+  border-radius: 0.625rem;
+  box-shadow: var(--neumorphic-inner-shadow);
+}
+.map iframe {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+  border-radius: 0.625rem;
+}
+.contact-tab {
+  letter-spacing: 0.04rem;
+}
+.contact-tab .button {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin: auto;
+  margin-bottom: 14px;
+  font-size: 25px;
+}
+.contact-tab h6 {
+  font-size: 18px;
+}
+.contact-tab p {
+  font-size: 14px;
+}
+#contact-me .card {
+  background-color: var(--background-color) !important;
+  border: none;
+}
+#contact-me .card-header {
+  letter-spacing: 0.04rem;
+}
+.contact-form label {
+  margin-bottom: 10px;
+}
+.contact-form input,
+#message {
+  background-color: var(--background-color);
+  box-shadow: var(--neumorphic-inner-shadow);
+  letter-spacing: 0.04rem;
+  border: 0.0625rem solid #d1d9e6d7 !important;
+}
+.contact-form input:focus,
+#message:focus {
+  background-color: var(--background-color);
+  box-shadow: var(--neumorphic-inner-shadow);
+  border: 0.0625rem solid #d1d9e6d7;
+}
+
+.contact-form .button {
+  width: 120px;
+  padding: 5px 0px;
+  border-radius: 0.625rem;
+  background: var(--background-color);
+  letter-spacing: 0.04rem;
+  margin: 25px auto;
+}
 @media screen and (max-width: 1024px) {
   .vh-sm-auto {
     min-height: auto !important;
