@@ -9,11 +9,8 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="./node_modules/pagepiling.js/dist/jquery.pagepiling.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+
+    <link rel="stylesheet" href="./assets/css/contents.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -24,65 +21,260 @@
       type="image/x-icon"
     />
   </head>
+
   <body>
     <div class="main-container min-vh-100">
       <div class="row m-0 p-0">
-        <div class="sidebar" id="sidebar">
-          <div class="w-100">
-            <button class="close-btn button" id="close-sidebar">
-              <i class="fas fa-times"></i>
-            </button>
-            <div class="profile-img-container">
-              <img src="./assets/img/htetmyatlinn.png" alt="" />
-            </div>
-            <div class="tabs">
-              <div class="my-info">
-                <p class="mb-0">Htet Myat Linn</p>
-                <small>Junior Frontend Developer</small>
+        <div class="col-12 col-xl-4 px-0 px-lg-2 p-0">
+          <div class="sidebar" id="sidebar">
+            <div class="w-100 scrollable-container">
+              <div class="scrollable-element">
+                <button class="close-btn button" id="close-sidebar">
+                  <i class="fas fa-times"></i>
+                </button>
+                <div class="profile-img-container">
+                  <img src="./assets/img/htetmyatlinn.png" alt="" />
+                </div>
+                <div class="tabs">
+                  <div class="my-info">
+                    <p class="mb-0">Htet Myat Linn</p>
+                    <small>Junior Frontend Developer</small>
+                  </div>
+                  <div class="nav-tabs">
+                    <ul>
+                      <a href="#introduction" data-menuanchor="introduction"
+                        ><i class="fas fa-user-circle"></i>Introduction</a
+                      >
+
+                      <a href="#about-me" data-menuanchor="about-me"
+                        ><i class="fas fa-info-circle"></i>About Me</a
+                      >
+
+                      <a href="#portfolio" data-menuanchor="portfolio"
+                        ><i class="fas fa-project-diagram"></i>Portfolio</a
+                      >
+
+                      <a href="#services" data-menuanchor="services"
+                        ><i class="fas fa-laptop-code"></i>Services</a
+                      >
+
+                      <a href="#contact" data-menuanchor="contact"
+                        ><i class="fas fa-address-book"></i>Contact Me</a
+                      >
+                    </ul>
+                  </div>
+                  <div class="social-tabs">
+                    <a class="button">
+                      <i
+                        class="fab fa-facebook-f"
+                        style="color: #3b5999 !important"
+                      ></i>
+                    </a>
+                    <a class="button">
+                      <i
+                        class="fab fa-github"
+                        style="color: #3b5999 !important"
+                      ></i>
+                    </a>
+                    <a class="button">
+                      <i
+                        class="fab fa-linkedin"
+                        style="color: #0277b5 !important"
+                      ></i>
+                    </a>
+                  </div>
+                  <small class="copyright"
+                    >&copy; 2021 All Rights Reserved
+                  </small>
+                </div>
               </div>
-              <div class="nav-tabs">
-                <ul>
-                  <li><i class="fas fa-user-circle"></i>Introduction</li>
-                  <li><i class="fas fa-info-circle"></i>About Me</li>
-                  <li><i class="fas fa-project-diagram"></i>Portfolio</li>
-                  <li><i class="fas fa-laptop-code"></i>Services</li>
-                  <li><i class="fas fa-address-book"></i>Contact Me</li>
-                </ul>
-              </div>
-              <div class="social-tabs">
-                <a class="button">
-                  <i
-                    class="fab fa-facebook-f"
-                    style="color: #3b5999 !important"
-                  ></i>
-                </a>
-                <a class="button">
-                  <i
-                    class="fab fa-github"
-                    style="color: #3b5999 !important"
-                  ></i>
-                </a>
-                <a class="button">
-                  <i
-                    class="fab fa-linkedin"
-                    style="color: #0277b5 !important"
-                  ></i>
-                </a>
-              </div>
-              <small class="copyright">&copy; 2021 All Rights Reserved </small>
             </div>
           </div>
         </div>
-        <div class="menu-bar">
-          <div class="brandname">Htet Myat Linn</div>
-          <div id="open-sidebar"><i class="fas fa-bars"></i></div>
+        <div class="col-12 col-xl-8 p-0">
+          <div class="menu-bar">
+            <div class="brandname">Htet Myat Linn</div>
+            <div id="open-sidebar"><i class="fas fa-bars"></i></div>
+          </div>
+          <section id="introduction">
+            <div
+              class="
+                min-vh-100
+                vh-sm-auto
+                row
+                flex-column-reverse flex-lg-row
+                align-items-md-center
+                m-0
+                p-0
+              "
+            >
+              <div
+                class="
+                  col-12 col-lg-6
+                  intro-contents
+                  px-4
+                  mt-3 mt-xl-0
+                  pr-md-5
+                  px-lg-5 px-xl-0
+                  pr-xl-5
+                "
+              >
+                <h5 class="mb-3">
+                  Hello! I'm <b>Htet Myat Linn</b>. Nice to Meet You.
+                </h5>
+
+                <p class="mb-3">
+                  I'm a Freelance Frontend Developer and working on Design and
+                  Development. Passionate in building Minimal and Casual Website
+                  Design. I'm naturally confident and love to collaborate with
+                  people.
+                </p>
+                <a href="#about-me" class="button">Detail About Me</a>
+              </div>
+              <div
+                class="
+                  col-12 col-lg-6
+                  intro-illustration
+                  p-4
+                  mt-3 mt-xl-0
+                  pr-xl-5
+                "
+              >
+                <img
+                  src="./assets/img/htetmyatlinn-intro.svg"
+                  alt="htetmyatlinn-intro-illustration"
+                />
+              </div>
+            </div>
+          </section>
+          <section id="about-me">
+            <div
+              class="
+                row
+                min-vh-100
+                vh-sm-auto
+                flex-column-reverse flex-lg-row
+                align-items-md-center
+                m-0
+                p-0
+              "
+            >
+              <div
+                class="
+                  col-12 col-lg-6
+                  htetmyatlinn-info
+                  px-4
+                  mt-3 mt-xl-0
+                  pr-md-5
+                  px-lg-5 px-xl-0
+                  pr-xl-5
+                "
+              >
+                <h5 class="mb-3">Let's be Curious About Me</h5>
+                <p>
+                  I'm studying computer science at University of Information
+                  Technology Yangon. I don't want to define myself with the
+                  skills I am proud of. I like to define myself with the ideas I
+                  want to build.
+                  <br /><br />
+                  I acquired patience and time management as well as the ability
+                  to communicate well with team members and clients. I'm looking
+                  forward to building your desired website design soon and don't
+                  hesitate to discuss precious ideas with me.
+                </p>
+                <button class="button">Download CV</button>
+              </div>
+              <div
+                class="
+                  col-12 col-lg-6
+                  info-illustration
+                  p-4
+                  mt-3 mt-xl-0
+                  pr-xl-5
+                "
+              >
+                <img
+                  src="./assets/img/htetmyatlinn-freelancer.svg"
+                  alt="htetmyatlinn-freelancer-illustration"
+                />
+              </div>
+            </div>
+          </section>
+          <section id="services">
+            <div
+              class="
+                row
+                min-vh-100
+                flex-column
+                justify-content-center
+                align-items-center
+                vh-sm-auto
+                p-0
+                m-0
+              "
+            >
+              <div class="col-12 px-xl-0 mb-xl-5 px-0">
+                <div class="row px-0 mx-0 mt-4 mt-xl-0 pr-xl-5 mr-xl-2">
+                  <div class="col-12 col-xl-4 px-0 pr-lg-2">
+                    <div class="neumorphic-card">
+                      <div class="card-contents">
+                        <div class="text-center">
+                          <img
+                            src="./assets/img/htetmyatlinn-prototyping-service.svg"
+                            alt=""
+                          />
+                          <p>Prototyping Website</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-4 px-0 px-lg-2">
+                    <div class="neumorphic-card">
+                      <div class="card-contents">
+                        <div class="text-center">
+                          <img
+                            src="./assets/img/htetmyatlinn-maintenance-service.svg.svg"
+                            alt=""
+                          />
+                          <p>Maintenance Web Design</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-4 px-0 px-lg-2">
+                    <div class="neumorphic-card">
+                      <div class="card-contents">
+                        <div class="text-center">
+                          <img
+                            src="./assets/img/htetmyatlinn-building-website.svg"
+                            alt=""
+                          />
+                          <p>Frontend Development</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 px-4 py-4 px-xl-0 py-xl-0">
+                <h5 class="mb-3">Available Services</h5>
+                <p class="mr-0 pr-0 pr-xl-5 mr-xl-5">
+                  As a freelancer, I provide landing pages and ecommerence
+                  website user-interface for digital marketing as well as
+                  maintaining the frontend design. Also available for static
+                  webpages such as personal portfolio website that will
+                  efficiently improve your personal branding among the others.
+                  I'm pretty sure that my services will completely satisfy you.
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
 
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src=" ./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./node_modules/pagepiling.js/dist/jquery.pagepiling.min.js"></script>
     <script src="./assets/js/slidebar.js"></script>
   </body>
 </html>

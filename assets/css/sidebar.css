@@ -28,14 +28,6 @@ body {
   background: var(--background-color);
 }
 
-.min-vh-100 {
-  min-height: 100vh;
-}
-
-.w-100 {
-  width: 100%;
-}
-
 .sidebar {
   position: fixed;
   display: flex;
@@ -44,6 +36,9 @@ body {
   margin: 0;
   z-index: 5;
   width: 25%;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
   min-height: 100vh;
   background: rgb(237 241 244);
   box-shadow: 5px 0px 8px 0px rgba(0, 0, 0, 0.212);
@@ -111,7 +106,7 @@ body {
 .nav-tabs ul {
   list-style-type: none;
 }
-.nav-tabs ul li {
+.nav-tabs ul a {
   padding: 8px 28px;
   box-shadow: var(--neumorphic-button-shadow);
   border-radius: 20px;
@@ -123,18 +118,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--normal-font);
+  text-decoration: none;
 }
 
-.nav-tabs ul li:not(.active):hover {
+.nav-tabs ul a:not(.active):hover {
   transform: scale(0.99);
   box-shadow: var(--neumorphic-button-shadow-hover);
   cursor: grabbing;
 }
-.nav-tabs ul li:not(.active):active {
+.nav-tabs ul a:not(.active):active {
   box-shadow: var(--neumorphic-button-shadow-active);
 }
 
-.nav-tabs ul li i {
+.nav-tabs ul a i {
   font-size: 15px;
   margin: 0;
   margin-right: 8px;
@@ -168,6 +165,8 @@ body {
   box-shadow: var(--neumorphic-button-shadow-hover);
   transform: scale(0.99);
   cursor: grabbing;
+  text-decoration: none;
+  color: var(--soft-dark);
 }
 .button:active {
   box-shadow: var(--neumorphic-button-shadow-active);
@@ -191,7 +190,7 @@ body {
 
 .menu-bar {
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   top: 0px;
   width: 100%;
   justify-content: space-between;
@@ -220,7 +219,7 @@ body {
   .sidebar {
     width: 100%;
     padding: 14px 0px;
-    position: absolute;
+    position: fixed;
   }
   .profile-img-container {
     min-width: 240px;
@@ -237,11 +236,11 @@ body {
   .my-info small {
     font-size: 12px;
   }
-  .nav-tabs ul li {
+  .nav-tabs ul a {
     font-size: 14px;
     padding: 5px 0px;
   }
-  .nav-tabs ul li i {
+  .nav-tabs ul a i {
     font-size: 12px;
   }
   .social-tabs .button {
@@ -268,6 +267,7 @@ body {
 @media screen and (max-width: 1000px) and (min-height: 700px) {
   .sidebar {
     padding-top: 20%;
+    position: fixed;
   }
 }
 
@@ -309,7 +309,7 @@ body {
   .nav-tabs {
     margin: 20px 0px;
   }
-  .nav-tabs ul li {
+  .nav-tabs ul a {
     font-size: 20px;
     margin-bottom: 18px;
   }
@@ -367,7 +367,7 @@ body {
   .my-info small {
     font-size: 23px;
   }
-  .nav-tabs ul li {
+  .nav-tabs ul a {
     font-size: 23px;
   }
   .social-tabs .button {
@@ -379,5 +379,21 @@ body {
   }
   .copyright {
     margin-top: 20px;
+  }
+}
+
+/* For Low Height Devices */
+
+@media screen and (max-height: 620px) {
+  .scrollable-container {
+    position: relative;
+    top: 138px;
+    padding: 15px 0px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .sidebar {
+    overflow-y: hidden;
   }
 }
