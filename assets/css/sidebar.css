@@ -390,8 +390,8 @@ body {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1366px) and (min-height: 600px) {
   .sidebar {
-    overflow-y: hidden;
+    overflow-y: hidden !important;
   }
 }
