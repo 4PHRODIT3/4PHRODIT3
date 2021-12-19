@@ -109,11 +109,38 @@ html {
   width: 120px;
   padding: 5px 0px;
   border-radius: 0.625rem;
-  color: rgb(11, 11, 138);
+  color: rgb(11, 11, 138) !important;
   letter-spacing: 0.04rem;
   margin: 25px auto;
   font-size: 14px;
+  background-color: var(--background-color) !important;
 }
+
+.card {
+  background-color: var(--background-color);
+}
+.card-img-top {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+#portfolio .card .button {
+  border-radius: 0.5rem;
+  min-width: 100px;
+  padding: 3px 0px;
+}
+.slick-list {
+  padding: 20px 0px;
+}
+.slick-dots {
+  bottom: 35px;
+}
+.slick-arrow {
+  display: none !important;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 @media screen and (max-width: 1024px) {
   .vh-sm-auto {
     min-height: auto !important;
@@ -127,6 +154,24 @@ html {
   .neumorphic-card .card-contents img {
     height: 100%;
   }
+  .portfolio .card {
+    width: 96% !important;
+    margin: auto;
+    max-width: 20.5rem;
+  }
+  .menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 1;
+  }
+  body {
+    overflow: hidden;
+  }
+  .portfolio {
+    min-height: 600px !important;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1024px) {
@@ -136,4 +181,13 @@ html {
   .neumorphic-card .card-contents img {
     height: 235px;
   }
+  body {
+    overflow: hidden;
+  }
+  .portfolio {
+    max-height: 600px;
+  }
+}
+
+@media screen and (max-height: 360px) {
 }

@@ -9,7 +9,8 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/contents.css" />
     <link
       rel="stylesheet"
@@ -42,7 +43,7 @@
                   </div>
                   <div class="nav-tabs">
                     <ul>
-                      <a href="#introduction" data-menuanchor="introduction"
+                      <a href="#introduction" class="active" data-menuanchor="introduction"
                         ><i class="fas fa-user-circle"></i>Introduction</a
                       >
 
@@ -64,19 +65,19 @@
                     </ul>
                   </div>
                   <div class="social-tabs">
-                    <a class="button">
+                    <a class="button" target="_blank" href="https://www.facebook.com/thegod.rin">
                       <i
                         class="fab fa-facebook-f"
                         style="color: #3b5999 !important"
                       ></i>
                     </a>
-                    <a class="button">
+                    <a class="button" target="_blank" href="https://github.com/4PHRODIT3">
                       <i
                         class="fab fa-github"
                         style="color: #3b5999 !important"
                       ></i>
                     </a>
-                    <a class="button">
+                    <a class="button" target="_blank" href="https://www.linkedin.com/in/htet-myat-linn-11b210211">
                       <i
                         class="fab fa-linkedin"
                         style="color: #0277b5 !important"
@@ -136,7 +137,7 @@
                   col-12 col-lg-6
                   intro-illustration
                   p-4
-                  mt-3 mt-xl-0
+                  mt-5 mt-xl-0
                   pr-xl-5
                 "
               >
@@ -182,7 +183,7 @@
                   forward to building your desired website design soon and don't
                   hesitate to discuss precious ideas with me.
                 </p>
-                <button class="button">Download CV</button>
+                <a class="button" href="./assets/files/Htet_Myat_Linn_CV.pdf" target="_blank" download>Download CV</a>
               </div>
               <div
                 class="
@@ -197,6 +198,68 @@
                   src="./assets/img/htetmyatlinn-freelancer.svg"
                   alt="htetmyatlinn-freelancer-illustration"
                 />
+              </div>
+            </div>
+          </section>
+          <section id="portfolio">
+            <div class="container pr-xl-4 px-xl-0">
+              <div class="row align-items-center d-flex mb-0  min-vh-100 portfolio">
+                <div class="col-12 col-md-6">
+                  <div class="card neumorphic-outer-shadow" style="width: 22rem;">
+                    <img class="card-img-top" src="./assets/img/nutriverse.netlify.app-min.png" alt="Nutriverse Website Mock">
+                    <div class="card-body pb-2">
+                      <h5>Nutriverse</h5>
+                      <p class="card-text text-black-50 my-2">Landing page design for diet food service "Nutriverse".</p>
+                    </div>
+                    <div class="d-flex justify-content-start px-4">
+                      <a class="button mt-0 mb-4" href="https://nutriverse.netlify.app">
+                        Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card neumorphic-outer-shadow" style="width: 22rem;">
+                    <img class="card-img-top" src="./assets/img/marketing-ui.netlify.app-min.png" alt="Lorem Marketing Website Mock">
+                    <div class="card-body pb-2">
+                      <h5>Lorem Media</h5>
+                      <p class="card-text text-black-50 my-2">Digital Marketing static web page design for "Lorem Media".</p>
+                    </div>
+                    <div class="d-flex justify-content-start px-4">
+                      <a class="button mt-0 mb-4" href="https://marketing-ui.netlify.app/">
+                        Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card neumorphic-outer-shadow" style="width: 22rem;">
+                    <img class="card-img-top" src="./assets/img/dashboard.png" alt="Nutriverse Dashboard Website Mock">
+                    <div class="card-body pb-2">
+                      <h5>Social Platform</h5>
+                      <p class="card-text text-black-50 my-2">Social Platform with User Management Features.</p>
+                    </div>
+                    <div class="d-flex justify-content-start px-4">
+                      <a class="button mt-0 mb-4" href="https://github.com/4PHRODIT3/User-Management-System.git">
+                        Source
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card neumorphic-outer-shadow" style="width: 22rem;">
+                    <img class="card-img-top" src="./assets/img/destination-gym.netlify.app-min.png" alt="Destination Gym Website Mock">
+                    <div class="card-body pb-2">
+                      <h5>Destination Gym</h5>
+                      <p class="card-text text-black-50 my-2">Clean Design for Gym "Destination".</p>
+                    </div>
+                    <div class="d-flex justify-content-start px-4">
+                      <a class="button mt-0 mb-4" href="https://destination-gym.netlify.app/">
+                        Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -293,7 +356,7 @@
                         <div
                           class="col-12 col-md-4 text-center px-0 contact-tab"
                         >
-                          <a class="button text-center">
+                          <a class="button text-center" target="_blank" href="https://goo.gl/maps/twdQtJCwcqAs3epB7">
                             <i class="fas fa-map-marker-alt"></i>
                           </a>
                           <h6>Map</h6>
@@ -383,6 +446,9 @@ Hello Htet!</textarea
 
     <script src=" ./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/slidebar.js"></script>
+    <script src="./assets/js/carousel.js"></script>
   </body>
 </html>
