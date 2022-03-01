@@ -7,7 +7,6 @@
 
 - ⚡ Fun fact **Nothing Here! You will notice when you are working with me xD**
 
-<h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
 
