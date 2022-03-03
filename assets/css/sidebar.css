@@ -212,8 +212,14 @@ body {
 .nav-tabs .active {
   box-shadow: var(--neumorphic-button-shadow-active);
 }
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* iOS Safari 100vh Bug */
+    height: -webkit-fill-available;
+  }
+}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1180px) {
   .sidebar {
     width: 100%;
     padding: 14px 0px;

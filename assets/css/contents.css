@@ -14,8 +14,9 @@ html {
   letter-spacing: 0.06rem;
   line-height: 1.6rem;
 }
-.intro-contents p {
-  font-size: 15px;
+.text-contents {
+  font-size: 1.3em;
+  line-height: 1.8em;
 }
 .htetmyatlinn-info .button,
 .intro-contents .button {
@@ -125,7 +126,7 @@ html {
   padding: 20px 0 !important;
 }
 .slick-dots {
-  bottom: 35px !important;
+  bottom: -45px !important;
 }
 .slick-arrow {
   display: none !important;
@@ -180,6 +181,23 @@ html {
   border-right: solid 10px transparent;
   animation: rotate 1s infinite;
 }
+.demo-link {
+  width: auto;
+  height: auto;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 0.625rem;
+}
+#portfolio .button {
+  color: #0b0b8a;
+}
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* iOS Safari 100vh Bug */
+    height: -webkit-fill-available;
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: translate(-50%, -50%) rotate(0);
@@ -188,7 +206,7 @@ html {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1180px) {
   .vh-sm-auto {
     min-height: auto !important;
   }
@@ -219,8 +237,19 @@ html {
   .portfolio {
     min-height: 600px !important;
   }
+  .text-contents {
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  .main-project-img-container img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .slick-dots {
+    bottom: 20px !important;
+  }
 }
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+@media screen and (min-width: 480px) and (max-width: 1180px) {
   .neumorphic-card {
     width: 470px;
   }

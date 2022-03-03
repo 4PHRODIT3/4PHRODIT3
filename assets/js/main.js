@@ -38,18 +38,7 @@ const setUpNavActions = (_) => {
 setUpNavActions();
 
 window.onload = (_) => {
-  fetchRenderBlockingElement();
   document.querySelector(".loader-container").remove();
-};
-
-const fetchRenderBlockingElement = (_) => {
-  document.querySelector(
-    "head"
-  ).innerHTML += `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />`;
-  document.querySelector(
-    ".map"
-  ).innerHTML += `<iframe class="map" title="My Office Location" src="https://maps.google.com/maps?q=16.773602885144747,%2096.18222327116501&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border: 0; filter: grayscale(80%)" allowfullscreen="" loading="lazy"></iframe>`;
 };
 
 $(".portfolio").slick({
@@ -58,8 +47,6 @@ $(".portfolio").slick({
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 1920,
@@ -71,7 +58,7 @@ $(".portfolio").slick({
       },
     },
     {
-      breakpoint: 1024,
+      breakpoint: 1380,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -87,7 +74,7 @@ $(".portfolio").slick({
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 600,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
