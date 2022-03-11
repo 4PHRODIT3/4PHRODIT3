@@ -114,7 +114,8 @@ html {
 .card-img-top {
   border-radius: 1rem;
   padding: 1rem;
-  min-height: 200px;
+  min-height: 215px;
+  background-size : cover;
 }
 #portfolio .card .button {
   border-radius: 0.5rem;
