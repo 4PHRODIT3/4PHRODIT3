@@ -5,10 +5,8 @@ var nav_tabs = document.querySelector(".nav-tabs");
 
 const sidebar_toggler = (_) => {
   let screen_width = screen.width;
-  if (screen_width <= 1050) {
-    sidebar.classList.toggle("nav-slide-off");
-    document.body.classList.toggle("overflow-y-scroll");
-  }
+  sidebar.classList.toggle("nav-slide-off");
+  document.body.classList.toggle("overflow-y-scroll");
 };
 
 const setActive = (id) => {

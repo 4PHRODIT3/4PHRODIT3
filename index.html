@@ -61,7 +61,7 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/contents.css" />
+    <link rel="stylesheet" href="./assets/css/contents.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
@@ -198,9 +198,9 @@
               <div
                 class="col-12 col-lg-6 intro-contents px-4 px-md-5 mt-3 mt-lg-5 mt-xl-0 pr-md-5 px-lg-5 px-xl-0 pr-xl-5"
               >
-                <h1 class="mb-5">
+                <h2 class="mb-3">
                   Hello! I'm <b>Htet Myat Linn</b>. Nice to Meet You.
-                </h1>
+                </h2>
 
                 <p class="mb-3 text-contents">
                   I'm a Freelance Web Developer and working on Design and
@@ -227,7 +227,7 @@
               <div
                 class="col-12 col-lg-6 htetmyatlinn-info px-4 px-md-5 mt-3 mt-xl-0 pr-md-5 px-lg-5 px-xl-0 pr-xl-5"
               >
-                <h1 class="mb-3 mb-lg-5">Let's be Curious About Me</h1>
+                <h2 class="mb-3">Let's be Curious About Me</h2>
                 <p class="text-contents mb-3">
                   I'm studying computer science at University of Information
                   Technology Yangon. I don't want to define myself with the
@@ -258,7 +258,7 @@
             </div>
           </section>
           <section id="portfolio">
-            <div class="container-fluid pr-xl-5 px-xl-0">
+            <div class="container-fluid pr-xl-5 px-xl-0 py-xl-5">
               <div class="row">
                 <div class="col-12 px-4 px-md-5 px-xl-0">
                   <div
@@ -274,7 +274,7 @@
                       </div>
                     </div>
                     <div class="col-12 col-lg-7 px-4 px-lg-3 px-xl-5">
-                      <h1 class="mb-5">Kawi Online Magazine</h1>
+                      <h2 class="mb-3">Kawi Online Magazine</h2>
                       <p class="text-contents">
                         Kawi is content management system with two panels, front
                         panel that our users are using and admin panel that the
@@ -312,38 +312,65 @@
                 </div>
               </div>
               <div class="row align-items-center my-3 d-flex mb-0 portfolio">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6" style="width: 22rem;min-height: 445px;">
                   <div
                     class="card neumorphic-outer-shadow"
-                    style="width: 22rem"
+                    style="width: 100%;min-height: 445px;"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="./assets/img/cryptoverse-rinn.netlify.app.webp"
+                      alt="Cryptoverse Website Mock"
+                    />
+                      <div class="card-body pb-2">
+                        <h5>Cryptoverse</h5>
+                        <p class="card-text text-black-50 my-2">
+                          Website that provides Crypto News, Rates and Exchanges implemented with React, Redux Toolkit and Tailwind CSS.
+                        </p>
+                      </div>
+                      <div class="d-flex justify-content-start px-4">
+                        <a
+                          class="button mt-0 mb-4"
+                          target="_blank"
+                          href="https://cryptoverse-rinn.netlify.app"
+                        >
+                          Live
+                        </a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6" style="width: 22rem;min-height: 445px;">
+                  <div
+                    class="card neumorphic-outer-shadow"
+                    style="width: 100%;min-height: 445px;"
                   >
                     <img
                       class="card-img-top"
                       src="./assets/img/gpt3-rinn.netlify.app.webp"
                       alt="GPT3 Website Mock"
                     />
-                    <div class="card-body pb-2">
-                      <h5>GPT3 Ai</h5>
-                      <p class="card-text text-black-50 my-2">
-                        Prototype from AR SHAKIR created with React and pure
-                        CSS.
-                      </p>
-                    </div>
-                    <div class="d-flex justify-content-start px-4">
-                      <a
-                        class="button mt-0 mb-4"
-                        target="_blank"
-                        href="https://gpt3-rinn.netlify.app"
-                      >
-                        Demo
-                      </a>
-                    </div>
+                      <div class="card-body pb-2">
+                        <h5>GPT3 Ai</h5>
+                        <p class="card-text text-black-50 my-2">
+                          Prototype from AR SHAKIR created with React and pure
+                          CSS.
+                        </p>
+                      </div>
+                      <div class="d-flex justify-content-start px-4">
+                        <a
+                          class="button mt-0 mb-4"
+                          target="_blank"
+                          href="https://gpt3-rinn.netlify.app"
+                        >
+                          Live
+                        </a>
+                      </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6" style="width: 22rem;min-height: 445px;">
                   <div
                     class="card neumorphic-outer-shadow"
-                    style="width: 22rem"
+                    style="width: 100%;min-height: 445px;"
                   >
                     <img
                       class="card-img-top"
@@ -362,15 +389,15 @@
                         target="_blank"
                         href="https://nutriverse.netlify.app"
                       >
-                        Demo
+                        Live
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6" style="width: 22rem;min-height: 445px;">
                   <div
                     class="card neumorphic-outer-shadow"
-                    style="width: 22rem"
+                    style="width: 100%;min-height: 445px;"
                   >
                     <img
                       class="card-img-top"
@@ -389,35 +416,7 @@
                         target="_blank"
                         href="https://marketing-ui.netlify.app/"
                       >
-                        Demo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <div
-                    class="card neumorphic-outer-shadow"
-                    style="width: 22rem"
-                  >
-                    <img
-                      class="card-img-top"
-                      src="./assets/img/destination-gym.netlify.app-min.webp"
-                      alt="Destination Gym Website Mock"
-                    />
-                    <div class="card-body pb-2">
-                      <h5>Destination Gym</h5>
-                      <p class="card-text my-2">
-                        Minimalist Design for Gym "Destination".
-                      </p>
-                    </div>
-                    <div class="d-flex justify-content-start px-4">
-                      <a
-                        class="button mt-0 mb-4"
-                        target="_blank"
-                        href="https://destination-gym.netlify.app/"
-                      >
-                        Demo
+                        Live
                       </a>
                     </div>
                   </div>
@@ -427,7 +426,7 @@
           </section>
           <section id="services">
             <div
-              class="row min-vh-100 flex-column justify-content-center align-items-center vh-sm-auto p-0 m-0"
+              class="row min-vh-100 py-xl-5 flex-column justify-content-center align-items-center vh-sm-auto p-0 m-0"
             >
               <div class="col-12 px-xl-0 mb-xl-5 px-0">
                 <div class="row px-0 mx-0 mt-4 mt-xl-0 pr-xl-5 mr-xl-2">
@@ -473,7 +472,7 @@
                 </div>
               </div>
               <div class="col-12 px-4 px-md-5 py-5 px-xl-0 py-xl-0">
-                <h1 class="mb-5">Available Services</h1>
+                <h2 class="mb-3">Available Services</h2>
                 <p class="mr-0 pr-0 pr-xl-5 mr-xl-5 text-contents">
                   As a freelancer, I provide landing pages, content management
                   system and ecommerence website for digital marketing as well
@@ -621,6 +620,6 @@ Hello Htet!</textarea
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.min.js"></script>
   </body>
 </html>

@@ -40,7 +40,7 @@ body {
   min-height: 100vh;
   background: rgb(237 241 244);
   box-shadow: 5px 0px 8px 0px rgba(0, 0, 0, 0.212);
-  padding: 25px 0px;
+  padding: 10px 0px;
   border-right: 0.0825rem solid #d1d9e6d0;
 }
 
@@ -49,8 +49,9 @@ body {
 }
 
 .profile-img-container {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 170px;
+  background-size: cover;
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
@@ -87,7 +88,7 @@ body {
 
 .my-info p {
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.2rem;
 }
 
@@ -108,11 +109,11 @@ body {
   padding: 8px 28px;
   box-shadow: var(--neumorphic-button-shadow);
   border-radius: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   border: 0.0625rem solid #d1d9e6d0;
   transition: 0.4s;
   letter-spacing: 0.04rem;
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +131,7 @@ body {
 }
 
 .nav-tabs ul a i {
-  font-size: 15px;
+  font-size: 12px;
   margin: 0;
   margin-right: 8px;
 }
@@ -386,15 +387,15 @@ body {
   }
 }
 
-/* For Low Height Devices */
+/* For Low Height Devices
 
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 500px) {
   .scrollable-container {
     position: relative;
     top: 138px;
     padding: 15px 0px;
   }
-}
+} */
 
 @media screen and (min-width: 1000px) and (min-height: 600px) {
   .sidebar {

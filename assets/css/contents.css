@@ -15,8 +15,8 @@ html {
   line-height: 1.6rem;
 }
 .text-contents {
-  font-size: 1.3em;
-  line-height: 1.8em;
+  font-size: 1.2em;
+  line-height: 1.7em;
 }
 .htetmyatlinn-info .button,
 .intro-contents .button {
@@ -115,7 +115,7 @@ html {
   border-radius: 1rem;
   padding: 1rem;
   min-height: 215px;
-  background-size : cover;
+  background-size: cover;
 }
 #portfolio .card .button {
   border-radius: 0.5rem;
