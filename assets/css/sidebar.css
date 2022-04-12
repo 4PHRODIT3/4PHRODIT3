@@ -7,7 +7,7 @@
 }
 
 :root {
-  --background-color: rgb(237 241 244);
+  --background-color: #EDF1F4;
   --neumorphic-outer-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff !important;
   --neumorphic-outer-shadow-hover: 4px 4px 5px 0 rgba(0, 0, 0, 0.336),
     -2px -2px 4px 0 rgba(255, 255, 255, 0.664);

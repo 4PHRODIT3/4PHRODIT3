@@ -13,7 +13,7 @@
     />
     <meta
       name="keywords"
-      content="htet myat linn, frontend web developer, htet myat linn frontend freelancer, web designer"
+      content="htet myat linn, frontend web developer, htet myat linn frontend freelancer, web developer"
     />
 
     <!-- Open Graph / Facebook -->
@@ -47,56 +47,73 @@
       property="twitter:image"
       content="https://www.htetmyatlinn.work/assets/img/htetmyatlinn.work-preview.webp"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
     <link
       rel="shortcut icon"
       href="./assets/img/htetmyatlinn.ico"
       type="image/x-icon"
     />
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/contents.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-9HYSXBG583"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    <noscript><link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'/></noscript>
+    <noscript><link rel="stylesheet" href='./node_modules/bootstrap/dist/css/bootstrap.min.css'/></noscript>
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"></noscript>
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"></noscript>
+    <noscript><link rel="stylesheet" href="./assets/css/contents.min.css"></noscript>
 
-      gtag("config", "G-9HYSXBG583");
-    </script>
+    <style>
+      .loader-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        z-index: 15;
+        background: #fff;
+      }
+      .loader {
+        position: relative;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        box-shadow: inset -7px -7px 25px 0 rgba(255, 255, 255, 0.5),
+          inset 7px 7px 25px 0 rgba(0, 0, 0, 0.5);
+      }
+      .loader::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: rgba(255, 255, 255);
+        box-shadow: -7px -7px 25px 0 rgba(255, 255, 255, 0.9),
+          7px 7px 25px 0 rgba(0, 0, 0, 0.3);
+      }
+      .loader::after {
+        content: "";
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        border-top: solid 10px transparent;
+        border-left: solid 10px transparent;
+        border-bottom: solid 55px #97faff;
+        border-right: solid 10px transparent;
+        animation: rotate 1s infinite;
+      }
+    </style>
   </head>
 
   <body>
     <div class="loader-container">
       <div class="loader"></div>
     </div>
-    <div class="main-container min-vh-100">
+    <div class="main-container min-vh-100" style="display: none;">
       <div class="row m-0 p-0">
         <div class="col-12 col-xl-4 px-0 px-lg-2 p-0">
           <div class="sidebar" id="sidebar">
@@ -110,7 +127,7 @@
                   <i class="fas fa-times"></i>
                 </button>
                 <div class="profile-img-container">
-                  <img src="./assets/img/htetmyatlinn.png" alt="" />
+                  <img src="./assets/img/htetmyatlinn.webp" alt="Htet Myat Linn Avatar" />
                 </div>
                 <div class="tabs">
                   <div class="my-info">
@@ -251,7 +268,7 @@
                 class="col-12 col-lg-6 info-illustration p-4 mt-3 mt-xl-0 pr-xl-5"
               >
                 <img
-                  src="./assets/img/htetmyatlinn-freelancer.svg"
+                  src="./assets/img/htetmyatlinn-freelancer.svg" 
                   alt="htetmyatlinn-freelancer-illustration"
                 />
               </div>
@@ -284,27 +301,14 @@
                         MVC framework using Router System and OO Design Pattern.
                         More useful and data analytics tools will be contributed
                         later. You can also contribute this via my github.
-                        <br /><br />For the admin panel, you can explore with
-                        testing account.<br />
-                        Username -
-                        <span class="text-danger">testuser@kawis.social</span
-                        ><br />
-                        Password -
-                        <span class="text-danger">helloworld$</span>
                       </p>
 
                       <div class="d-flex">
                         <a
                           class="button demo-link"
-                          href="http://kawis.social"
+                          href="https://github.com/4PHRODIT3/Kawi-Blog"
                           target="_blank"
-                          >User Panel</a
-                        >
-                        <a
-                          class="button demo-link"
-                          href="http://kawis.social/user/login"
-                          target="_blank"
-                          >Admin Panel</a
+                          >Github</a
                         >
                       </div>
                     </div>
@@ -436,7 +440,7 @@
                         <div class="text-center">
                           <img
                             src="./assets/img/htetmyatlinn-prototyping-service.svg"
-                            alt=""
+                            alt="Website Prototyping Illustration"
                           />
                           <p>Prototyping Website</p>
                         </div>
@@ -449,7 +453,7 @@
                         <div class="text-center">
                           <img
                             src="./assets/img/htetmyatlinn-maintenance-service.svg.svg"
-                            alt=""
+                            alt="Website Maintenance Illustration"
                           />
                           <p>Maintenance Web Design</p>
                         </div>
@@ -462,7 +466,7 @@
                         <div class="text-center">
                           <img
                             src="./assets/img/htetmyatlinn-building-website.svg"
-                            alt=""
+                            alt="Frontend Development Illustration"
                           />
                           <p>Frontend Development</p>
                         </div>
@@ -613,6 +617,23 @@ Hello Htet!</textarea
 
     <script src=" ./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- LOAD CSS -->
+    <script type='text/javascript'>
+      (function() {
+          document.getElementsByTagName('head')[0].innerHTML += `<link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap" rel="stylesheet">
+            `;
+          var links = ['./assets/css/all-contents.min.css','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css','./node_modules/bootstrap/dist/css/bootstrap.min.css','https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css','https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'];
+          links.map(link => {
+            var css = document.createElement('link');
+            css.href = link;
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            document.getElementsByTagName('head')[0].appendChild(css);
+          })
+      })();
+    </script>
     <script src="./node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
